@@ -1,0 +1,44 @@
+.imgContainer {
+  :global {
+
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-content: flex-start;
+    overflow: hidden;
+
+    .goodsPercent {
+      display: flex;
+      position: absolute;
+      padding: 6px 8px;
+      height: 27px;
+      width: 66px;
+      left: 0;
+      border-top-left-radius: 12px;
+      border-bottom-right-radius: 12px;
+      background-color: rgb(255, 39, 39);
+
+      .percentTxt {
+        box-sizing: border-box;
+        display: block;
+        font-size: 28px;
+        white-space: pre-wrap;
+        line-height: 3.73333vw;
+        font-weight: 900;
+        color: rgb(255, 255, 255);
+      }
+
+      .percentPointer {
+        font-size: 16px;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+

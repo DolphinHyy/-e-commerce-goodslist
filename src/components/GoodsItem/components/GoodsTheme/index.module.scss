@@ -1,0 +1,66 @@
+.root {
+  margin: 0 24px 16px 24px;
+  border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  box-sizing: border-box;
+  position: relative;
+  //height: 272px;
+  width: 702px;
+  background-image: url("//ae01.alicdn.com/kf/H739ab0ad71d04987a17e1008cb263bd6j.png_.webp");
+  background-repeat: no-repeat;
+
+  :global {
+
+    .backContainer {
+      padding: 24px;
+
+    }
+
+    .header {
+      display: flex;
+      height: 36px;
+
+
+      .headerLeft {
+        width: 506px;
+        color: rgba(34, 34, 34, 1);
+        font-size: 30px;
+        font-weight: bold;
+      }
+
+      .headerRight {
+        display: flex;
+        font-size: 26px;
+        white-space: nowrap;
+        align-items: center;
+
+        .icon {
+          width: 24px;
+          height: 24px;
+          margin-left: 4px;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .tags {
+      margin-top: 14px;
+      .tagsItem {
+        display: inline-block;
+        background-color: rgb(253, 243, 234);
+        border: 1px solid rgba(255,228,208,1);
+        color: #FF6C00;
+        font-size: 22px;
+        padding: 2px 8px;
+      }
+    }
+
+    .goodsMain {
+
+      padding: 24px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

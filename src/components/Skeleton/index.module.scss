@@ -1,0 +1,67 @@
+.root {
+  margin: 0;
+  padding: 0;
+  :global {
+    .skeItem {
+      margin: 0 24px 16px 24px;
+      border-radius: 16px;
+      background-color: rgb(255, 255, 255);
+      overflow: hidden;
+      box-sizing: border-box;
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      flex-shrink: 0;
+      align-content: flex-start;
+      height: 272px;
+      width: 702px;
+
+      .common {
+        background-color: rgb(221,221,221);
+        height: 24px;
+      }
+      .left {
+        width: 272px;
+        height: 272px;
+      }
+
+      .right {
+        padding-top: 24px;
+        margin-left: 24px;
+        .title  {
+          width: 382px;
+          height: 32px;
+          border-radius: 5px;
+          margin-bottom: 5px;
+        }
+
+        .des {
+          width: 280px;
+          margin-top: 5px;
+          height: 30px;
+        }
+
+        .price {
+          height: 48px;
+          width: 240px;
+          margin-top: 25px;
+        }
+
+        .footer {
+          margin-top: 10px;
+          display: flex;
+          width: 380px;
+          flex-shrink: 0;
+
+          > * {
+            width: 50%;
+            height: 30px;
+          }
+          .footerRight {
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.root {
+  width: 100vw;
+  overflow: scroll hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  height: 88px;
+
+  // 可以设置滚动条隐藏
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+
+  :global {
+    .cateContainer {
+      display: flex;
+      align-items: center;
+      width: auto;
+      flex-shrink: 0;
+      li {
+        font-size: 28px;
+        margin-left: 24px;
+        margin-right: 24px;
+        flex-shrink: 0;
+        line-height: 36px;
+        padding-bottom: 20px;
+      }
+
+      li.active {
+        font-size: 30px;
+        font-weight: bold;
+        position: relative;
+      }
+
+      li.active::after {
+        content: '';
+        position: absolute;
+        width: 64px;
+        height: 8px;
+        background-color: rgb(255, 29, 37);
+        bottom: 0;
+        left: 50%;
+        margin-left: -32px;
+        border-radius: 32px;
+      }
+
+
+    }
+
+  }
+}
